@@ -15,8 +15,8 @@ private static List<SelectOption> createOptionList(List<Schema.RecordTypeInfo> r
   List<SelectOption> options = new List<SelectOption>();
     
   for(Schema.RecordTypeInfo recordType : recordTypes) {
-    if(!recordType .isMaster() && recordType .isAvailable()) {
-      options.add(new SelectOption(recordType .getRecordTypeId(), recordType .getName()));
+    if(!recordType.isMaster() && recordType.isAvailable()) {
+      options.add(new SelectOption(recordType.getRecordTypeId(), recordType.getName()));
     }
   }
     
