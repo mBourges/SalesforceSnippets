@@ -6,6 +6,8 @@ It helps writing code that can be packaged and deploy on a different org.
 
 key prefix = the sObject's 3 letters internal identifier like 'a0N'.
 
+You could use \<sObject>.sObjectType.getDescribe().getKeyPrefix() (e.g.: Account.sObjectType.getDescribe().getKeyPrefix()) but this method is static and cannot be changed at runtime. This snippet can help create more dynamic code.
+
 ## Example
 
 Let say we have an __Issue__ object with an ApiName **Issue__c**.
