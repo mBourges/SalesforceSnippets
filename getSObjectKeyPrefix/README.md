@@ -1,4 +1,14 @@
 # GetSobjectKeyPrefix
+##API
+
+Signature: getSObjectKeyPrefix(String objectApiName)
+ 
+Return Value: Boolean
+
+Examples:
+- getSObjectKeyPrefix('Account')
+- getSObjectKeyPrefix('Issue__c')
+
 ## Purpose
 
 This snippet retrives an sObject's prefix by its apiName.
